@@ -1,0 +1,11 @@
+//  1 - Executar a query abaixo na base de dados;
+//  2 - Configurar as informações para acesso ao banco de dados no Config.php;
+
+// Favor utilizar a query abaixo para criação da tabela na base de dados
+CREATE TABLE IF NOT EXISTS clientes (
+    `codigo` INT NOT NULL AUTO_INCREMENT PRIMARY KEY UNIQUE KEY,
+    `nome_completo` VARCHAR(255) NOT NULL,
+    `data_nascimento` DATE NOT NULL,
+    `cpf` VARCHAR(11) NOT NULL UNIQUE KEY,
+    `telefone` VARCHAR(20) NULL,
+    `email` VARCHAR(255) NULL);

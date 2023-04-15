@@ -1,11 +1,11 @@
 <?php
 
 //Configurações para BD;
-$host = 'localhost';
-$usuario = 'root';
-$senha = 'admin';
-$database = 'crud';
-$port = 3306;
+$host = '';
+$usuario = '';
+$senha = '';
+$database = '';
+$port = ;
 
 //Iniciar Conexao
 $conexaoDb = new mysqli($host, $usuario, $senha, $database, $port);
